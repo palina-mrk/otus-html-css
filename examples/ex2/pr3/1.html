@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title></title>
+</head>
+<body>
+  <h1>Упражнения на управление параметрами текста</h1>
+  <dl>
+    <dt>Выравнивание текста</dt>
+    <dd>Свойство <b>text-align</b>, значения:
+    <ul>
+      <li>left/right - по левому/правому краю</li>
+      <li>center - по центру</li>
+      <li>justify - одновременно и по левому, и по правому краю, т.е. растянуть</li>
+    </ul>
+    </dd>
+    <dt>Управление <i>толщиной</i> шрифта</dt>
+    <dd>Свойство <b>font-weight</b>, значения:
+    <ul>  <li>bold - жирный шрифт</li>
+      <li>normal - отменяет жирность</li>
+    </ul>
+    </dd>
+   </dd>
+    <dt>Управление <i>стилем</i> шрифта</dt>
+    <dd>Свойство <b>font-style</b>, значения:
+    <ul>  <li>italic - курсив</li>
+      <li>normal - отменяет курсив</li>
+   </dd>
+    <dt>Управление <i>размером</i> шрифта</dt>
+    <dd>Свойство <b>font-size</b>, значения:
+    <ul>  <li><b><i>number</i></b>px - <b>number</b> пикселей</li>
+    </ul>
+   </dd>
+    <dt>Управление <i>шрифтом</i></dt>
+    <dd>Свойство <b>font-family</b>, значения:
+    <ul>  
+      <li>&quot;Times New Roman&quot;</li>
+      <li>Arial</li>
+      <li>Georgia</li>
+      <li>Verdana</li>
+      <li>&quot;Trebuchet MS&quot;</li>
+      <li>Impact</li>
+      <li>&quot;Arial Black&quot;</li>
+      <li>&quot;Comic Sans MS&quot;</li>
+      <li>&quot;Courier New&quot;</li>
+    *Значение, состоящее из нескольких слов необходимо заключать в кавычки.
+   </dd>
+    <dt>Управление <i>междустрочным интервалом</i>:</dt>
+    <dd>Видимый междустрочный интервал: (<b>n</b> - <b>m</b>)px, где: 
+    <ul>  <li><b>line-height</b>: <b>n</b>px; - высота строки</li>
+    <li><b>font-size</b>: <b>m</b>px; - высота текста </li>
+    </ul>
+    *Если <b>line-height</b>: <b>k</b>; - число или дробь (без указания px), то:
+    <ul>
+    <li><b>n</b> = k*<b>font-size</b> - высота строки в пикселях,</li>
+    <li>k*<b>font-size</b> - <b>font-size</b> = (<b>k</b> - 1)*<b>font-size</b> - видимый межстрочный интервал</li>
+    </ul>
+   </dd>
+  <dt>Сокращенная запись - свойство <b>font</b></dt>
+  <dd>Синтаксис: <pre><b>font: font-style font-weight font-size/font-height font-family;</b></pre>
+  <ul></ul>
+  <li>порядок значений важен;</li>
+  <li>задать можно только перечисленные свойства;</li>
+  <li>свойства <b>font-size</b>, <b>font-family</b> - обязательные</li>
+</ul>
+  </dd>
+</dl>
+  <h2>Упражнение 1</h2>
+
+  <p>Установите таблице ширину в 500px, а высоту в 300px. Сделайте ячейки td жирными и по центру, а ячейки th - нежирными.</p>
+<span class="ex1">
+<table border="1">
+	<tr>
+		<th>Name</th>
+		<th>Surname</th>
+		<th>Salary</th>
+	</tr>
+	<tr>
+		<td>John</td>
+		<td>Smith</td>
+		<td>200$</td>
+	</tr>
+	<tr>
+		<td>Nick</td>
+		<td>Mayers</td>
+		<td>300$</td>
+	</tr>
+	<tr>
+		<td>Alex</td>
+		<td>Jonson</td>
+		<td>400$</td>
+	</tr>
+</table>
+</span>
+
+  <h2>Упражнение 2</h2>
+
+  <p>Сделайте так, чтобы все заголовки h2 на вашей странице были курсивными.</p>
+
+<span class="ex2">
+<h1>Main page title</h1>
+<p>
+	This is a paragraph with text.
+</p>
+<h2>Secondary heading 1</h2>
+<p>
+	This is a paragraph with text.
+</p>
+<p>
+	This is a paragraph with text.
+</p>
+<h2>Secondary heading 2</h2>
+<p>
+	This is a paragraph with text.
+</p>
+<p>
+	This is a paragraph with text.
+</p>
+</span>
+
+  <h2>Упражнение 3</h2>
+
+  <p>Установите заголовку h1 размер шрифта в 50px и выравнивание по центру, заголовкам h2 размер шрифта в 40px и отмените жирность, а абзацам установите шрифт в 30px.</p>
+
+
+<span class="ex3">
+<h1>Main page title</h1>
+<p>
+	This is a paragraph with text.
+</p>
+<h2>Secondary heading 1</h2>
+<p>
+	This is a paragraph with text.
+</p>
+<p>
+	This is a paragraph with text.
+</p>
+<h2>Secondary heading 2</h2>
+<p>
+	This is a paragraph with text.
+</p>
+<p>
+	This is a paragraph with text.
+</p>
+</span>
+
+  <h2>Упражнение 4</h2>
+
+  <p>Проверьте работу всех шрифтов из приведенного выше списка.</p>
+<span class="ex4">
+<table>
+    <tr>
+      <th>font-family</th>
+      <th>example</th>
+    </tr>
+    <tr class="times-new-roman">
+      <td >&quot;Times New Roman&quot;
+      </td>
+      <td>
+      This is a paragraph with a text.
+      </td>
+    </tr>
+    <tr class="arial">
+      <td >Arial
+      </td>
+      <td>
+      This is a paragraph with a text.
+      </td>
+    </tr>
+    <tr class="georgia">
+      <td >Georgia
+      </td>
+      <td>
+      This is a paragraph with a text.
+      </td>
+    </tr>
+    <tr class="verdana">
+      <td >Verdana
+      </td>
+      <td>
+      This is a paragraph with a text.
+      </td>
+    </tr>
+    <tr class="trebuchet-ms">
+      <td >&quot;Trebuchet MS&quot;
+      </td>
+      <td>
+      This is a paragraph with a text.
+      </td>
+    </tr>
+    <tr class="impact">
+      <td >Impact
+      </td>
+      <td>
+      This is a paragraph with a text.
+      </td>
+    </tr>
+    <tr class="arial-black">
+      <td >&quot;Arial Black&quot;
+      </td>
+      <td>
+      This is a paragraph with a text.
+      </td>
+    </tr>
+    <tr class="comic-sans-ms">
+      <td >&quot;Comic Sans MS&quot;
+      </td>
+      <td>
+      This is a paragraph with a text.
+      </td>
+    </tr>
+    <tr class="courier-new">
+      <td >&quot;Courier New&quot;
+      </td>
+      <td>
+      This is a paragraph with a text.
+      </td>
+  </table>
+</span>
+
+  <h2>Упражнение 5</h2>
+
+  <p>Пусть размер шрифта для абзацев равен 30px. Установите свойство line-height так, чтобы видимый белый промежуток между абзацами был равен 15px.</p>
+<span class="ex5">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir.
+</p>
+</span>
+  <h2>Упражнение 6</h2>
+
+  <p>Пусть размер шрифта для абзацев равен 30px. Установите свойство line-height так, чтобы видимый белый промежуток между абзацами был равен 15px. Используйте для этого значение line-height без единиц.</p>
+<span class="ex6">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir.
+</p>
+</span>
+</body>
+</html>

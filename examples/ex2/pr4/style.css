@@ -1,0 +1,14 @@
+.ex1 p {
+  font: 13px/20px "Times New Roman";
+}
+
+.ex2 p {
+  width: 300px;
+  color: red;
+  font: bold 40px Arial;
+}
+
+.ex3 p {
+  text-indent: 50px;
+  font: italic bold 40px/60px Arial;
+}

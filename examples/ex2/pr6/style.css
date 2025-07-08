@@ -1,0 +1,35 @@
+h1 {
+  font-size: 42px;
+  color: blue;
+  text-align: center;
+  width: 500px;
+}
+
+h2 {
+  color: green;
+  font: normal 30px 
+        "Times New Roman";
+  text-align: center;
+  width: 500px;
+}
+
+p {
+  text-align: justify;
+  text-indent: 42px;
+  font: 16px/1.5 Arial;
+  width: 500px;
+}
+
+i {
+  color: green;
+}
+
+ul {
+  text-align: center;
+  font: 16px/1.25 "Times New Roman";
+}
+
+li {
+  width: 400px;
+  text-align: justify;
+}

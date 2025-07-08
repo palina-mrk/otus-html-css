@@ -1,0 +1,49 @@
+.ex1 p {
+	color: blue;
+}
+
+.ex2 p {
+	color: blue;
+}
+.ex2 b {
+	color: red;
+}
+
+.ex3 b {
+	color: red;
+}
+.ex3 p {
+	color: blue;
+}
+
+.ex4 ul {
+	color: blue;
+}
+
+.ex5 ul {
+	color: blue;
+}
+.ex5 li {
+	color: red;
+}
+
+.ex6 ul {
+	color: blue;
+}
+.ex6 li {
+	color: red;
+}
+.ex6 i {
+	color: green;
+}
+
+.ex7 i {
+	font-size: 30px;
+}
+.ex7 ul {
+	font-size: 20px;
+}
+.ex7 li {
+	color: red;
+	font-weight: bold;
+}

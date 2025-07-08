@@ -1,0 +1,23 @@
+.ex1 p {
+  text-decoration: underline;
+}
+
+.ex2 p {
+  text-decoration: overline;
+  color: red;
+  font-size: 20px;
+}
+
+.ex3 p {
+  text-decoration: line-through;
+  font-size: 18px;
+  color: green;
+}
+
+.ex4 p {
+  font-size: 18px;
+}
+.ex4 a {
+  text-decoration: none;
+  color: red;
+}

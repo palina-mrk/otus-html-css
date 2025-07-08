@@ -1,0 +1,21 @@
+p {
+  color: orange;
+  width: 300px;
+}
+
+h1 {
+  color: green;
+}
+
+h2 {
+  color: blue;
+}
+
+h3 {
+  color: violet;
+}
+
+.ex2 td {
+  width: 40px;
+  height: 30px;
+}

@@ -1,0 +1,80 @@
+dl dt {
+  font-weight: bold;
+}
+
+dl dd {
+  text-align: left;
+}
+
+.ex1 table {
+  width: 500px;
+  height: 300px;
+}
+
+.ex2 h2 {
+  font-style: italic;
+}
+
+.ex3 h1 {
+  font-weight: 50px;
+  text-align: center;
+}
+
+.ex3 h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.ex3 p {
+  font-size: 30px;
+}
+
+.ex1 td {
+  font-weight: bold;
+  text-align: center;
+}
+
+.ex1 th {
+  font-weight: normal;
+}
+
+.ex4 td {
+  font-size: 30px;
+}
+.times-new-roman td {
+  font-family: "Times New Roman";
+}
+.arial td {
+  font-family: Arial;
+}
+.georgia td {
+  font-family: Georgia;
+}
+.trebuchet-ms td {
+  font-family: "Trebuchet MS";
+}
+.impact td {
+  font-family: Impact;
+}
+.arial-black td {
+  font-family: "Arial Black";
+}
+.comic-sans-ms td {
+  font-family: "Comic Sans MS";
+}
+.courier-new td {
+  font-family: "Courier New";
+}
+.ex5 p {
+  text-align: justify;
+  width: 400px;
+  line-height: 45px;
+  font-size: 30px;
+}
+
+.ex6 p {
+  text-align: justify;
+  width: 400px;
+  line-height: 1.5;
+  font-size: 30px;
+}

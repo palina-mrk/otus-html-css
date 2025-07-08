@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Упражнения по HTML</title>
+</head>
+<body>
+  Меню
+  <ul>
+    <li><a href="#pic">Картинки</a></li>
+    <li><a href="#tab">Таблицы</a></li>
+    <li><a href="pr1/1.html">Практика №1</li>
+    <li><a href="pr1/2.html">Практика №2</a></li>
+    <li><a href="pr1/3.html">Практика №3</a></li>
+    <li><a href="pr2/1.html">Практика на выравнивание текста в css</a></li>
+    <li><a href="pr3/1.html">Табличка и практика на управление стилями текста в css</a></li>
+    <li><a href="#tab">Таблицы</a></li>
+    <li><a href="#tab">Таблицы</a></li>
+    <li><a href="#tab">Таблицы</a></li>
+  </ul>
+  <h2 id="pic">Картинки</h2>
+  <ul>
+  <li>width=&quot;100&quot; - картинка пропорционально масштабируется, чтобы ширина была 100px</li>
+  <img src="cat.jpg" width="100">
+  <li>height=&quot;100&quot; - картинка пропорционально масштабируется, чтобы высота была 100px</li>
+  <img src="cat.jpg" height="100">
+  <li>width=&quot;100&quot; height=&quot;100&quot; - картинка искажается, чтобы ширина и высота были по 100px</li>
+  <img src="cat.jpg" width="100" height="100">
+  </ul>
+
+  <h2 id="tab">Таблицы</h2>
+  <ul>
+    <li>table - главный тег, атрибуты:
+      <ul>
+        <li>border - ширина границ</li>
+        <li>width, height- ширина и высота таблицы</li>
+      </ul>
+    </li>
+    <li>tr - строка</li>
+    <li>td - ячейка
+  <table border="1" width="400" height="300">
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    <tr>
+    </tr>
+      <td>a</td>
+      <td>b</td>
+      <td>c</td>
+      <td>d</td>
+      <td>e</td>
+    </tr>
+  </table>
+    </li>
+    <li>th вместо td - создание заголовочных ячеек
+    <table border="1" width="400">
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>Apples</td>
+        <td>100</td>
+        <td>5 kg</td>
+      </tr>
+      <tr>
+        <td>Oranges</td>
+        <td>200</td>
+        <td>6 kg</td>
+      </tr>
+      <tr>
+        <td>Bananas</td>
+        <td>300</td>
+        <td>7 kg</td>
+      </tr>
+    </table>
+    </li>
+    <li>через CSS установим у <b>ячеек</b> ширину 40px и высоту 30px:
+    <ul>
+     <li>указываем в теге table атрибут class=&quot;ex2&quot;</li>
+     <li>указываем в файле  <b>styles.css</b>: </li>
+     <li><b>.ex2 td {width: 40px; height: 30px}</b></li>
+     </ul>
+     <table border="1" class="ex2">
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>200$</td>
+      </tr>
+      <tr>
+        <td>Nick</td>
+        <td>Mayers</td>
+        <td>300$</td>
+      </tr>
+      <tr>
+        <td>Alex</td>
+        <td>Jonson</td>
+        <td>400$</td>
+      </tr>
+     </table>
+    </li>
+  </ul>
+
+</body>
+</html>
