@@ -42,3 +42,26 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Medium'),
+        url('./fonts/PlayfairDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display SemiBold'),
+        url('./fonts/PlayfairDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: local('Bitter Regular'), local('Bitter-Regular'),
+        url('./fonts/Bitter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
