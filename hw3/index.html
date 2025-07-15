@@ -3,64 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mod Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400&family=Playfair+Display:wght@500;600&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">    <title>Mod Studio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <strong>Mod</strong>
+            <b class="main-titles">Mod</b>
         </div>
         <nav>
             <ul class="main-menu">
                 <li><a href="#biography">Biography</a></li>
-                <li><a href="#designers">Designers</a></li>
+                <li><a href="#designers" class="link-underlined">Designers</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#strong-points">Strong points</a></li>
             </ul>
         </nav>
-        <h1>Mod Studio</h1>
+        <h1 class="main-titles">Mod Studio</h1>
         <p><b>Modern Web Studio</b></p>
         <img src="images/inside-weather.jpg" alt="main-picture">
     </header>
 
     <section class="biography" id="biography">
         <article>
-        <h2>Katya Mills</h2>
-        <h3>Art Director</h3>
-        <p><b>-</b><br>
-            <q>The more I deal 
+        <h2 class="main-titles">Katya Mills</h2>
+        <p class="sub-titles">Art Director<br>
+Scenography / Styling / Creative Photography / Design</p>
+        <blockquote>
+          <p><b>-</b></p>
+          <p class="text-content">"The more I deal 
             with the work as something that is my own,
             as something that is personal,
-            the more successful it is.</q></p>
+            the more successful it is."</p></blockquote>
         </article>
         <article>
             <img src="images/jared-weiss.jpg" alt="women">
-            <p><strong>Biography</strong></p>
+            <p  class="pic-title"><b>Biography</b></p>
         </article>  
     </section>
 
      <section class="designers" id="designers">
-        <article>
+        <article  class="pic-note">
             <img src="images/spurwing-agency.jpg" alt="women-in-hat">
-            <h2>Jess Wonder</h2>
+            <p class="person-name"> <b>Jess Wonder</b> </h3>
             <p> <b>From/</b> Be more flower<br>
                 <b>Skills/</b> Design Strategy / Marketing</p>
         </article>
-        <article>
+        <article  class="pic-note">
             <img src="images/stil-1.jpg" alt="trousers">
-            <h2>Kameron Clein</h2>
+            <p class="person-name"> <b>Kameron Clein</b> </h3>
             <p> <b>From/</b> Be more flower<br>
                 <b>Skills/</b> Design Strategy / Marketing</p>
         </article>
-        <article>
+        <article class="pic-note">
             <img src="images/stil-2.jpg" alt="coffee">
-            <h2>Louisse Red</h2>
+            <p class="person-name"> <b>Louisse Red</b></h3>
             <p> <b>From/</b> Be more flower<br>
                 <b>Skills/</b> Design Strategy / Marketing</p>
         </article>
-        <article>
+        <article  class="pic-note">
             <img src="images/stil-1.jpg" alt="trousers">
-            <h2>Kameron Clein</h2>
+            <h3  class="person-name"> <b>Kameron Clein</b> </h3>
             <p> <b>From/</b> Be more flower<br>
                 <b>Skills/</b> Design Strategy / Marketing</p>
         </article>      
@@ -69,28 +74,28 @@
     <section class="testimonials" id="testimonials">
         <article>
             <img src="images/keghan-crossland.jpg" alt="kitchen">
-            <p><strong>Testimonials</strong></p>
-            <p> <b>Website</b><br>
+            <p class="pic-title"><b>Testimonials</b></p>
+            <p class="pic-note"> <b>Website</b><br>
             <a href="www.whitepapers.com">www.whitepapers.com</a></p>
-            <p> <b>Website</b><br>
+            <p class="pic-note"> <b>Website</b><br>
             <a href="www.whitepapers.com">www.whitepapers.com</a></p>
-            <p> <b>Website</b><br>
+            <p class="pic-note"> <b>Website</b><br>
             <a href="www.whitepapers.com">www.whitepapers.com</a></p>
         </article>
         <article>
-            <p><q>;I just really want to do good work
+            <blockquote  class="text-content"><p>"I just really want to do good work
             and work with some great people,
-            people who challenge me.</q>;</p>      
+            people who challenge me."</p></blockquote>      
             <img src="images/sinitta-leunen.jpg" alt="bag">
         </article>  
     </section>
     
     <section class="strong-points" id="strong-points">
-        <p><strong>Strong points</strong></p>
+        <p class="pic-title"><b>Strong points</b></p>
         <img src="images/dawid-liberadzki.jpg" alt="notebook">
         <img src="images/avery-klein.jpg" alt="blackboard">
-        <article><h2>Strength</h2>
-        <ul><li>Interiors</li>
+        <article><h2 class="main-titles">Strength</h2>
+        <ul class="text-content"><li>Interiors</li>
             <li>Outdoors</li>
             <li>Portraits</li>
             <li>Styling</li>
@@ -108,11 +113,11 @@
     <footer>
         <nav>
             <ul>
-                <li><a href="#">+7 921 123-45-67</a><br>
-                <a href="info@modstudio.com">info@modstudio.com</a>
+                <li class="contacts"><a href="#" class="link-underlined">+7 921 123-45-67</a><br>
+                <a href="info@modstudio.com" class="link-underlined">info@modstudio.com</a>
                 </li>
-                <li>A product of <b>MOD</b></li>
-                <li>© 2023 Mod Media. All rights reserved</li>
+                <li class="footer-name">A product of <b>MOD</b></li>
+                <li class="author-rights">© 2023 Mod Media. All rights reserved</li>
             </ul>
         </nav>
     </footer>
