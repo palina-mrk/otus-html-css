@@ -1,0 +1,48 @@
+.welcome-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 630px;
+  margin: 0;
+  padding: 0;
+  background: #E0B59F url("../images/inside-weather.jpg") no-repeat;
+  background-size: cover;
+}
+
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 110px 65px;
+  margin: 0;
+  width: calc(47.9167% - 130px);
+  background: #FFFFFF;
+}
+
+.welcome-title {
+  margin: 0 auto 14px;
+  padding: 0;
+  width: 100%;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 86px;
+  line-height: 103.2px;
+  text-align: center;
+  color: #000000;
+}
+
+.welcome-note{
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}

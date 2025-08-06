@@ -1,0 +1,22 @@
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  display: inline-flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+
+.section-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
