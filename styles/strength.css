@@ -1,0 +1,30 @@
+.strength-image {
+  width: 335px;
+  height: 554px;
+}
+
+.strength-image.last-image {
+  height: 555px;
+}
+
+.strength-listname {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 86px;
+  line-height: 1;
+  color: #000000;
+}
+
+.strength-list {
+  list-style-type: none;
+}
+
+.strength-item {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1;
+  color: #000000;
+}
