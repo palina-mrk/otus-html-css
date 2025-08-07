@@ -1,10 +1,13 @@
 .biography-block {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 138px;
+  justify-content: space-between;
+  gap: 50px;
   align-items: stretch;
-  padding: 150px 138px;
+  padding: 0;
+  margin: 150px auto;
+  max-width: 1164px;
+  width: 100%;
 }
 
 .biography-image--wrapper {
@@ -15,10 +18,10 @@
 }
 
 .biography-image {
-  display: block;
+  display: flex;
   margin: 0;
   padding: 0;
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
