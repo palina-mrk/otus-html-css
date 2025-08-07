@@ -1,9 +1,12 @@
 body {
+  box-sizing: border-box;
   font-family: "Roboto", "Arial", sans-serif;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
+  align-items: stretch;
   min-height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 .section-title {
@@ -19,4 +22,13 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
 }
