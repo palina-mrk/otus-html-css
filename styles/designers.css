@@ -1,0 +1,52 @@
+.designers-block {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 0 0 20px;
+}
+
+.designers-title {
+  width: 100%;
+  max-width: 1178px;
+  margin: 0 auto 30px;
+}
+
+.persons-block {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+  gap: 20px;
+  display: flex;
+  overflow-x: auto;
+  align-items: end;
+}
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.person-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.1875;
+  font-weight: 400;
+  color: #000000;
+}
+
+.person-card-large .person-text {
+  width: 332px;
+  align-self: flex-end;
+}
+
+.person-name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.accented-detail {
+  font-weight: 700;
+}
+

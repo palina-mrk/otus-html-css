@@ -5,7 +5,7 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
-  margin: 150px auto;
+  margin: 135px auto 150px;
   max-width: 1164px;
   width: 100%;
 }
@@ -20,7 +20,7 @@
 
 .testimonials-link-list {
   margin: 0;
-  padding: 35px 0;
+  padding: 40px 0 35px;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
