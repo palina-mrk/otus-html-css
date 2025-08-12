@@ -1,0 +1,99 @@
+.biography-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: stretch;
+  padding: 0;
+  margin: 150px auto;
+  max-width: 1164px;
+  width: 100%;
+}
+
+.biography-image--wrapper {
+  margin: 0;
+  padding: 0;
+  width: 49.055%;
+  position: relative;
+}
+
+.biography-image {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.biography-title {
+  position: absolute;
+  right: -29px;
+  top: 2px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: right;
+  transform-origin: right top;
+  transform: rotate(-90deg);
+  align-self: start;
+  flex-basis: 0;
+}
+
+.biography-content {
+  margin: 0;
+  padding: 0;
+  width: 39.089%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+}
+
+.director-name {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 86px;
+  line-height: 115px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.director-note {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0D0D0D;
+  padding: 0;
+  margin: 0;
+}
+
+.director-job, .director-skills {
+  margin: 0;
+  padding: 0;
+}
+
+
+.director-text {
+  font-family: 'Bitter';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  color: #0D0D0D;
+  margin: 0;
+  padding: 0;
+}
+
+.inblock-icon {
+  width: 20px;
+  height: 6px;
+  margin: 0 0 18px;
+  padding: 0;
+  background-color: #0D0D0D;
+}
+
+.director-quote {
+  padding: 0;
+  margin: 0;
+}

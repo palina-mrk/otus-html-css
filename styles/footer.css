@@ -1,0 +1,38 @@
+.footer {
+  background-color: #000;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.1875;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.contacts-block {
+  text-transform: uppercase;
+}
+
+.telephone-link {
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.email-link {
+  display: block;
+  color: #FFFFFF;
+}
+
+.slogan-block {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+}
+.slogan-name {
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.author-rights-block {
+  line-height: 1;
+}

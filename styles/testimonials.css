@@ -1,0 +1,65 @@
+.person-image {
+  width: 335.96px;
+  height: 439.46px;
+}
+
+.accented-image {
+  width: 572px;
+  height: 619px;
+}
+
+.person-content {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.1875;
+  font-weight: 400;
+  color: #000000;
+}
+
+.person-name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.accented-detail {
+  font-weight: 700;
+}
+
+.section-image.testimonials-image {
+  width: 451px;
+  height: 760px;
+}
+
+.testimonials-note {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.1875;
+  font-weight: 400;
+  color: #000000;
+}
+
+.testimonials-link-title {
+  font-weight: 700;
+  display: block;
+}
+
+.testimonials-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.content-quote.testimonials-quote {
+  text-align: center;
+  width: 221px;
+  height: 304px;
+  padding: 0;
+  margin: 0;
+}
+
+.content-image.testimonials-image {
+  width: 221px;
+  height: 333px;
+}

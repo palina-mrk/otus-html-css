@@ -9,46 +9,49 @@
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400&family=Playfair+Display:wght@500;600&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">    <title>Mod Studio</title>
   !-->
   <title>Mod Studio</title>
-  <link rel="stylesheet" href="./styles/fonts.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo">Mod</div>
-    <nav class="nav">
-      <ul class="menu-list">
-        <li class="menu-item"><a class="menu-link" href="#biography">Biography</a></li>
-        <li class="menu-item"><a class="menu-link accented-link" href="#designers">Designers</a></li>
-        <li class="menu-item"><a  class="menu-link" href="#testimonials">Testimonials</a></li>
-        <li class="menu-item"><a class="menu-link" href="#strong-points">Strong points</a></li>
-      </ul>
-    </nav>
-    <img class="message-icon" src="./images/icon.svg" alt="message-icon">
-  </header>
-
+  <div class="container">
+    <header class="header">
+      <div class="logo">Mod</div>
+      <nav class="nav">
+        <ul class="menu-list">
+          <li class="menu-item"><a class="menu-link" href="#biography">Biography</a></li>
+          <li class="menu-item"><a class="menu-link accented-link" href="#designers">Designers</a></li>
+          <li class="menu-item"><a  class="menu-link" href="#testimonials">Testimonials</a></li>
+          <li class="menu-item"><a class="menu-link" href="#strong-points">Strong points</a></li>
+        </ul>
+      </nav>
+      <svg class="message-icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.08708 29.6141C1.08093 29.6153 1.07601 29.6161 1.07227 29.6167L1.04988 29.6051C0.941953 29.5493 0.910136 29.5056 0.902743 29.4941C0.897944 29.4867 0.882353 29.4625 0.882353 29.3889V10.5C0.882353 5.40349 4.81227 1.38235 9.66864 1.38235H20.4116C25.2679 1.38235 29.1979 5.40349 29.1979 10.5V14.9444C29.1979 20.041 25.2679 24.0621 20.4116 24.0621H15.3624C10.2391 24.0621 5.23518 26.0035 1.33035 29.5361C1.2864 29.5545 1.23766 29.5727 1.18881 29.5878C1.14695 29.6008 1.11239 29.6093 1.08708 29.6141ZM1.07429 30.5C1.28915 30.5 1.61144 30.3889 1.8263 30.2778C5.58633 26.8333 10.4206 24.9444 15.3624 24.9444H20.4116C25.783 24.9444 30.0802 20.5 30.0802 14.9444V10.5C30.0802 4.94444 25.783 0.5 20.4116 0.5H9.66864C4.29717 0.5 0 4.94444 0 10.5V29.3889C0 29.8333 0.214859 30.1667 0.644576 30.3889C0.752005 30.5 0.966864 30.5 1.07429 30.5ZM11.0294 13.7353C11.7604 13.7353 12.3529 13.1427 12.3529 12.4118C12.3529 11.6808 11.7604 11.0882 11.0294 11.0882C10.2984 11.0882 9.70588 11.6808 9.70588 12.4118C9.70588 13.1427 10.2984 13.7353 11.0294 13.7353ZM16.7647 12.4118C16.7647 13.1427 16.1721 13.7353 15.4412 13.7353C14.7102 13.7353 14.1176 13.1427 14.1176 12.4118C14.1176 11.6808 14.7102 11.0882 15.4412 11.0882C16.1721 11.0882 16.7647 11.6808 16.7647 12.4118ZM19.8529 13.7353C20.5839 13.7353 21.1765 13.1427 21.1765 12.4118C21.1765 11.6808 20.5839 11.0882 19.8529 11.0882C19.122 11.0882 18.5294 11.6808 18.5294 12.4118C18.5294 13.1427 19.122 13.7353 19.8529 13.7353Z" fill="black"/>
+      </svg>
+    </header>
+  </div>
+  
   <main class="main">
     <section class="welcome-block">
       <div class="welcome-content">
         <h1 class="welcome-title">Mod Studio</h1>
         <div class="welcome-note">Modern Web Studio</div>
       </div>
-      <!--img class="welcome-image" src="./images/inside-weather.jpg" alt="main-picture"-->
     </section>
 
     <section class="biography-block" id="biography">
-      <img class="section-image biography-image" src="./images/jared-weiss.jpg" alt="women">
-      <h2  class="section-title biography-title">Biography</h2>  
+      <div class="biography-image--wrapper">
+        <img class="section-image biography-image" width="571" height="840" src="./images/jared-weiss.jpg" alt="women">
+        <h2  class="section-title biography-title">Biography</h2>
+      </div>  
       <div class="biography-content">
-        <div class="director-name">Katya Mills</div>        
+        <div class="director-name">Katya<br> Mills</div>        
         <div class="director-note">
           <div class="director-job">Art Director</div>
           <div class="director-skills">Scenography / Styling / Creative Photography / Design</div>
         </div>
         <div class="director-text">
           <div class="inblock-icon"></div>
-          <!--img class="inblock-icon" src="./images/black-rectangle.jpg" alt="short-dash"-->
           <blockquote class="content-quote director-quote">
-            "The more I deal with the work as something that is my own, as something that is personal, the more successful it is."
+            "The more I deal with the work<br>as something that is my own,<br>as something that is personal,<br>the more successful it is."
           </blockquote>
         </div>
       </div>
