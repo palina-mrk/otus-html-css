@@ -1,65 +1,88 @@
-.person-image {
-  width: 335.96px;
-  height: 439.46px;
+.testimonials-block {
+  display: grid;
+  grid-template-columns: 53% 1fr;
+  padding: 0;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 135px auto 150px;
+  max-width: 1164px;
+  width: 100%;
 }
 
-.accented-image {
-  width: 572px;
-  height: 619px;
+.testimonials-image-wrapper {
+  writing-mode: sideways-lr;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
-.person-content {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.1875;
-  font-weight: 400;
-  color: #000000;
-}
-
-.person-name {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.accented-detail {
-  font-weight: 700;
-}
-
-.section-image.testimonials-image {
-  width: 451px;
-  height: 760px;
-}
-
-.testimonials-note {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.1875;
-  font-weight: 400;
-  color: #000000;
+.testimonials-link-list {
+  margin: 0;
+  padding: 40px 0 35px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .testimonials-link-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 700;
   display: block;
+  color: #000000;
 }
 
-.testimonials-link {
+.testimonials-link-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
   text-decoration: none;
   color: #000000;
 }
 
+.testimonials-title-image {
+  overflow: hidden;
+  object-fit: cover;
+  height: auto;
+  max-width: 451px;
+}
 
-.content-quote.testimonials-quote {
-  text-align: center;
-  width: 221px;
-  height: 304px;
-  padding: 0;
+.testimonials-title {
+  text-align: right;
   margin: 0;
 }
 
-.content-image.testimonials-image {
-  width: 221px;
-  height: 333px;
+.testimonials-quote-wrapper {
+  display: flex;
+  padding: 0;
+  margin: auto 0;
+  align-items: center;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.testimonials-quote {
+  font-family: 'Bitter';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  max-width: 217px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonials-quote-image {
+  max-width: 221px;
+  height: auto;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
 }
