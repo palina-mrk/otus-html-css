@@ -11,154 +11,207 @@
   <title>Mod Studio</title>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-  <div class="container">
-    <header class="header">
-      <div class="logo">Mod</div>
-      <nav class="nav">
-        <ul class="menu-list">
-          <li class="menu-item"><a class="menu-link" href="#biography">Biography</a></li>
-          <li class="menu-item"><a class="menu-link accented-link" href="#designers">Designers</a></li>
-          <li class="menu-item"><a  class="menu-link" href="#testimonials">Testimonials</a></li>
-          <li class="menu-item"><a class="menu-link" href="#strong-points">Strong points</a></li>
-        </ul>
-      </nav>
-      <svg class="message-icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.08708 29.6141C1.08093 29.6153 1.07601 29.6161 1.07227 29.6167L1.04988 29.6051C0.941953 29.5493 0.910136 29.5056 0.902743 29.4941C0.897944 29.4867 0.882353 29.4625 0.882353 29.3889V10.5C0.882353 5.40349 4.81227 1.38235 9.66864 1.38235H20.4116C25.2679 1.38235 29.1979 5.40349 29.1979 10.5V14.9444C29.1979 20.041 25.2679 24.0621 20.4116 24.0621H15.3624C10.2391 24.0621 5.23518 26.0035 1.33035 29.5361C1.2864 29.5545 1.23766 29.5727 1.18881 29.5878C1.14695 29.6008 1.11239 29.6093 1.08708 29.6141ZM1.07429 30.5C1.28915 30.5 1.61144 30.3889 1.8263 30.2778C5.58633 26.8333 10.4206 24.9444 15.3624 24.9444H20.4116C25.783 24.9444 30.0802 20.5 30.0802 14.9444V10.5C30.0802 4.94444 25.783 0.5 20.4116 0.5H9.66864C4.29717 0.5 0 4.94444 0 10.5V29.3889C0 29.8333 0.214859 30.1667 0.644576 30.3889C0.752005 30.5 0.966864 30.5 1.07429 30.5ZM11.0294 13.7353C11.7604 13.7353 12.3529 13.1427 12.3529 12.4118C12.3529 11.6808 11.7604 11.0882 11.0294 11.0882C10.2984 11.0882 9.70588 11.6808 9.70588 12.4118C9.70588 13.1427 10.2984 13.7353 11.0294 13.7353ZM16.7647 12.4118C16.7647 13.1427 16.1721 13.7353 15.4412 13.7353C14.7102 13.7353 14.1176 13.1427 14.1176 12.4118C14.1176 11.6808 14.7102 11.0882 15.4412 11.0882C16.1721 11.0882 16.7647 11.6808 16.7647 12.4118ZM19.8529 13.7353C20.5839 13.7353 21.1765 13.1427 21.1765 12.4118C21.1765 11.6808 20.5839 11.0882 19.8529 11.0882C19.122 11.0882 18.5294 11.6808 18.5294 12.4118C18.5294 13.1427 19.122 13.7353 19.8529 13.7353Z" fill="black"/>
-      </svg>
-    </header>
-  </div>
+  <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo" aria-label="Ссылка на главную страницу">Mod</a>
+        <div class="header__nav-wrapper">
+          <nav class="header__nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#biography">B<span class="main-nav__link-text">iography</span></a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--display-accented" href="#designers">D<span class="main-nav__link-text">esigners</span></a>
+              </li>
+              <li class="main-nav__item">
+                <a  class="main-nav__link" href="#testimonials">T<span class="main-nav__link-text">estimonials</span></a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--moby-inactive" href="#strong-points">S<span class="main-nav__link-text">trong points</span></a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__message-link" aria-label="Отправить сообщение" href="#">
+            <svg class="header__message-icon" aria-hidden="true" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.08708 29.6141C1.08093 29.6153 1.07601 29.6161 1.07227 29.6167L1.04988 29.6051C0.941953 29.5493 0.910136 29.5056 0.902743 29.4941C0.897944 29.4867 0.882353 29.4625 0.882353 29.3889V10.5C0.882353 5.40349 4.81227 1.38235 9.66864 1.38235H20.4116C25.2679 1.38235 29.1979 5.40349 29.1979 10.5V14.9444C29.1979 20.041 25.2679 24.0621 20.4116 24.0621H15.3624C10.2391 24.0621 5.23518 26.0035 1.33035 29.5361C1.2864 29.5545 1.23766 29.5727 1.18881 29.5878C1.14695 29.6008 1.11239 29.6093 1.08708 29.6141ZM1.07429 30.5C1.28915 30.5 1.61144 30.3889 1.8263 30.2778C5.58633 26.8333 10.4206 24.9444 15.3624 24.9444H20.4116C25.783 24.9444 30.0802 20.5 30.0802 14.9444V10.5C30.0802 4.94444 25.783 0.5 20.4116 0.5H9.66864C4.29717 0.5 0 4.94444 0 10.5V29.3889C0 29.8333 0.214859 30.1667 0.644576 30.3889C0.752005 30.5 0.966864 30.5 1.07429 30.5ZM11.0294 13.7353C11.7604 13.7353 12.3529 13.1427 12.3529 12.4118C12.3529 11.6808 11.7604 11.0882 11.0294 11.0882C10.2984 11.0882 9.70588 11.6808 9.70588 12.4118C9.70588 13.1427 10.2984 13.7353 11.0294 13.7353ZM16.7647 12.4118C16.7647 13.1427 16.1721 13.7353 15.4412 13.7353C14.7102 13.7353 14.1176 13.1427 14.1176 12.4118C14.1176 11.6808 14.7102 11.0882 15.4412 11.0882C16.1721 11.0882 16.7647 11.6808 16.7647 12.4118ZM19.8529 13.7353C20.5839 13.7353 21.1765 13.1427 21.1765 12.4118C21.1765 11.6808 20.5839 11.0882 19.8529 11.0882C19.122 11.0882 18.5294 11.6808 18.5294 12.4118C18.5294 13.1427 19.122 13.7353 19.8529 13.7353Z" fill="black"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
   
   <main class="main">
-    <section class="welcome-block">
-      <div class="welcome-content">
-        <h1 class="welcome-title">Mod Studio</h1>
-        <div class="welcome-note">Modern Web Studio</div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <h1 class="hero__heading">Mod Studio</h1>
+          <span class="hero__note">Modern Web Studio</span>
+        </div>
+      </div>
+      <div class="hero__image-wrapper">
+        <img class="hero__image" src="./images/hero-image.jpg" width="1440" height="630" alt="Image with sofa ahd flower">
       </div>
     </section>
 
-    <section class="biography-block" id="biography">
-      <div class="biography-image--wrapper">
-        <img class="section-image biography-image" width="571" height="840" src="./images/jared-weiss.jpg" alt="women">
-        <h2  class="section-title biography-title">Biography</h2>
-      </div>  
-      <div class="biography-content">
-        <div class="director-name">Katya<br> Mills</div>        
-        <div class="director-note">
-          <div class="director-job">Art Director</div>
-          <div class="director-skills">Scenography / Styling / Creative Photography / Design</div>
-        </div>
-        <div class="director-text">
-          <div class="inblock-icon"></div>
-          <blockquote class="content-quote director-quote">
-            "The more I deal with the work<br>as something that is my own,<br>as something that is personal,<br>the more successful it is."
-          </blockquote>
+    <section class="biography" id="biography">
+      <div class="container container--short">
+        <div class="biography__wrapper">
+          <h2  class="biography__heading">Biography</h2>
+          <div class="biography__image-wrapper">
+            <img class="biography__image" width="571" height="840" src="./images/katya-photo.jpg" alt="Photo of Katya Mills">
+          </div>  
+          <div class="biography__inner">
+            <div class="biography__name">Katya Mills</div>        
+            <div class="biography__note">
+              <span class="biography__job">Art Director</span>
+              <ul class="biography__skills-list">
+                <li class="biography__skills-item">Scenography</li>
+                <li class="biography__skills-item">Styling</li>
+                <li class="biography__skills-item">Creative Photography</li>
+                <li class="biography__skills-item">Design</li>
+              </ul>
+            </div>
+            <div class="biography__quote">
+              <span class="biography__quote-string--moby-short">”The more&nbsp;I deal with</span> the work as&nbsp;something that is&nbsp;my&nbsp;own, <span class="biography__quote-string--moby-short">as&nbsp;something that</span> is&nbsp;personal, the more successful it&nbsp;is.”
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="designers-block" id="designers">
-      <h2 class="section-title designers-title">Designers</h2>
-      <div class="persons-block">
-        <div class="person-card person-card-large">
-          <img class="person-image" src="./images/spurwing-agency.jpg" width="572" height="538" alt="women-in-hat">
-          <div class="person-text"> 
-            <div class="person-name">Jess Wonder</div> 
-            <div class="person-details"><span class="accented-detail">From/</span> Be more flower</div>
-            <div class="person-details"><span class="accented-detail">Skills/</span> Design Strategy / Marketing</div>
-          </div>
+    <section class="designers" id="designers">
+      <div class="container container--left-only">
+        <div class="designers__wrapper">
+          <h2 class="designers__heading">Designers</h2>
+          <ul class="designers__persons-list">
+            <li class="designers__persons-item  designers__persons-item--large-image">
+              <div class="designers__image-wrapper">
+                <img class="designers__person-image" src="./images/designers-accented-photo.jpg" width="572" height="538" alt="Photo of girl in the field">
+              </div>
+              <div class="designers__person-info"> 
+                <span class="designers__person-name">Jess Wonder</span> 
+                <span class="designers__person-note"><span class="designers__accented-note">From/</span> Be more flower</span>
+                <span class="designers__person-note"><span class="designers__accented-note">Skills/</span> Design Strategy / Marketing</span>
+              </div>
+            </li>
+            <li class="designers__persons-item">
+              <img class="designers__person-image" src="./images/designers-a-handbag.jpg" width="335.96" height="439.46" alt="Photo of handbag in hands of a women">
+              <div class="designers__person-info"> 
+                <span class="designers__person-name">Kameron Clein</span> 
+                <span class="designers__person-note"><span class="designers__accented-note">From/</span> Be more flower</span>
+                <span class="designers__person-note"><span class="designers__accented-note">Skills/</span> Design Strategy / Marketing</span>
+              </div>
+            </li>
+            <li class="designers__persons-item">
+              <div class="designers__image-wrapper">
+                <img class="person-image" src="./images/designers-cup-of-coffee.jpg" width="336.77" height="439.46" alt="Photo of drinking coffee with a diary">
+              </div>
+              <div class="designers__person-info"> 
+                <span class="designers__person-name">Louisse Red</span> 
+                <span class="designers__person-note"><span class="designers__accented-note">From/</span> Be more flower</span>
+                <span class="designers__person-note"><span class="designers__accented-note">Skills/</span> Design Strategy / Marketing</span>
+              </div>
+            </li>
+            <li class="designers__persons-item">
+              <div class="designers__image-wrapper">
+                <img class="designers__person-image" src="./images/designers-a-handbag.jpg" width="335.96" height="439.46" alt="Photo of handbag in hands of a women">
+              </div>
+              <div class="designers__person-info"> 
+                <span class="designers__person-name">Kameron Clein</span> 
+                <span class="designers__person-note"><span class="designers__accented-note">From/</span> Be more flower</span>
+                <span class="designers__person-note"><span class="designers__accented-note">Skills/</span> Design Strategy / Marketing</span>
+              </div>
+            </li> 
+          </ul>     
         </div>
-        <div class="person-card">
-          <img class="person-image" src="./images/stil-1.jpg" width="335.96" height="439.46" alt="trousers">
-          <div class="person-text"> 
-            <div class="person-name">Kameron Clein</div> 
-            <div class="person-details"><span class="accented-detail">From/</span> Be more flower</div>
-            <div class="person-details"><span class="accented-detail">Skills/</span> Design Strategy / Marketing</div>
-          </div>
-        </div>
-        <div class="person-card">
-          <img class="person-image" src="./images/stil-2.jpg" width="336.77" height="439.46" alt="coffee">
-          <div class="person-text"> 
-            <div class="person-name">Louisse Red</div> 
-            <div class="person-details"><span class="accented-detail">From/</span> Be more flower</div>
-            <div class="person-details"><span class="accented-detail">Skills/</span> Design Strategy / Marketing</div>
-          </div>
-        </div>
-        <div class="person-card">
-          <img class="person-image" src="./images/stil-1.jpg" width="335.96" height="439.46" alt="trousers">
-          <div class="person-text"> 
-            <div class="person-name">Kameron Clein</div> 
-            <div class="person-details"><span class="accented-detail">From/</span> Be more flower</div>
-            <div class="person-details"><span class="accented-detail">Skills/</span> Design Strategy / Marketing</div>
-          </div>
-        </div> 
-      </div>     
-    </section>
-    
-    <section class="testimonials-block" id="testimonials">
-      <div class="testimonials-image-wrapper">
-        <ul class="testimonials-link-list">
-          <li class="testimonials-link-item"> 
-            <span class="testimonials-link-title">Creativity</span>
-            <a class="testimonials-link-text" href="www.whitepapers.com">www.whitepapers.com</a>
-          </li>
-          <li class="testimonials-link-item"> 
-            <span class="testimonials-link-title">Creativity</span>
-            <a class="testimonials-link-text" href="www.whitepapers.com">www.whitepapers.com</a>
-          </li>
-          <li class="testimonials-link-item"> 
-            <span class="testimonials-link-title">Website</span>
-            <a class="testimonials-link-text" href="www.whitepapers.com">www.whitepapers.com</a>
-          </li>  
-        </ul>
-        <img class="testimonials-title-image" src="./images/keghan-crossland.jpg" alt="kitchen">
-        <h2 class="section-title testimonials-title">Testimonials</h2>
-      </div>
-      <div class="testimonials-quote-wrapper">
-      <blockquote  class="content-quote testimonials-quote">
-        I just really want to do good work and work with some great people, people who challenge me.
-      </blockquote>      
-      <img class="testimonials-quote-image" src="./images/sinitta-leunen.jpg" alt="bag">
       </div>
     </section>
     
-    <section class="strength-block" id="strong-points">
-      <h2 class="section-title strength-title">Strong points</h2>
-      <div class="strength-content-wrapper">
-        <img class="strength-image" width="335" height="554" src="./images/dawid-liberadzki.jpg" alt="notebook">
-        <img class="strength-image" width="335" height="554" src="./images/avery-klein.jpg" alt="blackboard">
-        <div class="strength-text">
-          <div class="strength-listname">Strengths</div>
-          <ul class="strength-list">
-            <li class="strength-item">Interiors</li>
-            <li class="strength-item">Outdoors</li>
-            <li class="strength-item">Portraits</li>
-            <li class="strength-item">Styling</li>
-            <li class="strength-item">Events</li>
-            <li class="strength-item">Architecture</li>
-            <li class="strength-item">Design</li>
-            <li class="strength-item">Celebrations</li>
-            <li class="strength-item">Fashion</li>
-            <li class="strength-item">Nature</li>
+    <section class="testimonials" id="testimonials">
+      <div class="container container--short">
+        <div class="testimonials__wrapper">
+          <h2 class="testimonials__heading">Testimonials</h2>
+          <ul class="testimonials__links-list">
+            <li class="testimonials__links-item"> 
+              <span class="testimonials__link-name">Creativity</span>
+              <a class="testimonials__link-itself" href="www.whitepapers.com">www.whitepapers.com</a>
+            </li>
+            <li class="testimonials__links-item"> 
+              <span class="testimonials__link-name">Creativity</span>
+              <a class="testimonials__link-itself" href="www.whitepapers.com">www.whitepapers.com</a>
+            </li>
+            <li class="testimonials__links-item"> 
+              <span class="testimonials__link-name">Website</span>
+              <a class="testimonials__link-itself" href="www.whitepapers.com">www.whitepapers.com</a>
+            </li>  
           </ul>
+          <div class="testimonials__image-wrapper">
+            <img class="testimonials__image" src="./images/testimonials-big-image.jpg" width="451" height="760" alt="Photo of cafe with a customer">
+          </div>
+          <div class="testimonials__inner">
+            <div class="testimonials__quote">
+              <span class="testimonials__moby-string">I just really want</span> to do good work and work with some great people, people who challenge me.
+            </div>
+            <img class="testimonials__quote-image" src="./images/testimonials-small-image.jpg" width="221" height="333" alt="Photo of mesh bag">
+          </div>
         </div>
-        <img class="strength-image last-image" width="335" height="555" src="./images/keghan-crossland.jpg" alt="kitchen">
-      </div>  
+      </div>
+    </section>
+    
+    <section class="strength" id="strong-points">
+      <div class="container container--left-only">
+      <div class="strength__wrapper">
+        <h2 class="strength__heading">Strong points</h2>
+          <div class="strength__inner">
+            <div class="strength__image-card">
+              <img class="strength__image" width="335" height="554" src="./images/strength-desk.jpg" alt="Photo of a desk with a notebook">
+            </div>
+            <div class="strength__image-card">
+              <img class="strength__image" width="335" height="554" src="./images/strength-blackboard.jpg" alt="Photo of a living room with big blackboard">
+            </div>
+            <div class="strength__text-card">
+              <div class="strength__list-title">Strengths</div>
+              <ul class="strength__list">
+                <li class="strength__list-item">Interiors</li>
+                <li class="strength__list-item">Outdoors</li>
+                <li class="strength__list-item">Portraits</li>
+                <li class="strength__list-item">Styling</li>
+                <li class="strength__list-item">Events</li>
+                <li class="strength__list-item">Architecture</li>
+                <li class="strength__list-item">Design</li>
+                <li class="strength__list-item">Celebrations</li>
+                <li class="strength__list-item">Fashion</li>
+                <li class="strength__list-item">Nature</li>
+              </ul>
+            </div>
+            <div class="strength__image-card">
+              <img class="strength__image" width="335" height="555" src="./images/testimonials-big-image.jpg" alt="Photo of cafe with a customer">
+            </div>
+          </div>  
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="contacts-block">
-      <a class="telephone-link" href="#">+7 921 123-45-67</a>
-      <a class="email-link" href="#">info@modstudio.com</a>
-    </div>
-    <div class="slogan-block">
-      A product of <span class="slogan-name">MOD</span>
-    </div>
-    <div class="author-rights-block">
-      © 2023 Mod Media. All rights reserved
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__links">
+          <a class="footer__telephone-link" href="tel:+79211234567">+7 921 123-45-67</a>
+          <a class="footer__email-link" href="mailto:info@modstudio.com">info@modstudio.com</a>
+        </div>
+        <div class="footer__slogan">
+          A product of <span class="footer__slogan-title">MOD</span>
+        </div>
+        <div class="footer__copyright">
+          &copy;&nbsp;2023 Mod Media. All rights reserved
+        </div>
+      </div>
     </div>
   </footer>
-
 </body>
 </html>

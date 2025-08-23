@@ -1,19 +1,26 @@
-.designers-block {
+.designers__wrapper {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding: 0 0 0 20px;
+  position: relative;
+  padding: 54px 0 0 0;
 }
 
-.designers-title {
-  width: 100%;
-  max-width: 1178px;
-  margin: 0 auto 30px;
+.designers__heading {
+  width: fit-content;
+  margin: 0;
+  position: absolute;
+  top: -4px;
+  left: 119px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
-.persons-block {
-  margin: 0 auto;
+.designers__persons-list {
+  margin: 0;
   padding: 0;
+  list-style-type: none;
   max-width: 100%;
   gap: 20px;
   display: flex;
@@ -21,32 +28,69 @@
   align-items: end;
 }
 
-.person-card {
+.designers__persons-item {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  align-items: start;
 }
 
-.person-text {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.1875;
-  font-weight: 400;
-  color: #000000;
+.designers__persons-item--large-image {
+  align-items: end;
 }
 
-.person-card-large .person-text {
+.designers__image-wrapper {
+  display: flex;
+}
+
+.designers__person-info {
   width: 332px;
-  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
-.person-name {
+.designers__person-name {
+  font-size: 16px;
+  line-height: 19px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.accented-detail {
+.designers__person-note {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.designers__accented-note {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  .designers__heading {
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .designers__persons-list {
+    gap: 16px;
+  }
+  .designers__persons-item--large-image {
+    align-items: start;
+  }
+  .designers__image-wrapper {
+    height: 439.46px;
+    width: 309.05px;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+  }
+  .designers__image {
+    object-fit: cover;
+  }
+  .designers__person-info {
+    width: 300px;
+  }
+}

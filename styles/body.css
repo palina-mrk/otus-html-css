@@ -7,28 +7,55 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
+  color: #000000;
 }
 
 .section-title {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
 }
 
-.main {
+main {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
 .container {
+  box-sizing: border-box;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
-  text-align: center;
-  box-sizing: border-box;
+}
+
+.container--left-only {
+
+  padding: 0 0 0 20px;
+}
+
+.container--short {
+  max-width: 1165px;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+  .container--short {
+    max-width: 768px;
+    padding: 0 14px;
+  }
+  .container--left-only {
+    max-width: 768px;
+    padding: 0 0 0 16px;
+  }
 }
