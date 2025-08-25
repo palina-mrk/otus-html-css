@@ -118,7 +118,6 @@
     box-sizing: border-box;
     display: block;
     position: static;
-    width: 100%;
   }
   .biography__image-wrapper {
     max-width: unset;
@@ -162,7 +161,7 @@
     line-height: 85px;
     color: #000000;
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: unset;
     padding: 0 0 0 30px;
     position: relative;
   }
