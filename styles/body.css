@@ -24,20 +24,20 @@ body {
 
 .container--short {
   max-width: 1165px;
-  padding: 0 137.5px;
+  padding: 0 20px;
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 100%;
+    max-width: 736px;
     padding: 0 16px;
   }
   .container--short {
-    max-width: 100%;
+    max-width: 736px;
     padding: 0 14px;
   }
   .container--left-only {
-    max-width: 100%;
+    max-width: 736px;
     padding: 0 0 0 16px;
   }
 }
