@@ -6,33 +6,57 @@
   line-height: 1.1875;
   font-weight: 400;
   color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+  min-height: 190px;
+}
+
+@supports (display: grid) {
+  .footer {
+    display: grid;
+    grid-template-columns: 273px auto 273px;
+    justify-content: space-between;
+  }
 }
 
 .contacts-block {
   text-transform: uppercase;
+  width: 273px;
 }
 
 .telephone-link {
   display: block;
   color: #FFFFFF;
   text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
 }
 .email-link {
   display: block;
   color: #FFFFFF;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .slogan-block {
   font-size: 18px;
-  line-height: 1;
+  line-height: 18px;
   font-weight: 500;
+  letter-spacing: 0.2px;
 }
 .slogan-name {
   font-weight: 900;
   font-size: 24px;
   text-transform: uppercase;
+  margin-left: 3px;
 }
 
 .author-rights-block {
   line-height: 1;
+  width: 273px;
+  text-align: right;
 }
