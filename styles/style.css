@@ -1,7 +1,8 @@
 @import "./fonts.css";
 @import "./body.css";
+@import "./main-nav.css";
 @import "./header.css";
-@import "./welcome.css";
+@import "./hero.css";
 @import "./biography.css";
 @import "./designers.css";
 @import "./testimonials.css";

@@ -1,88 +1,175 @@
-.testimonials-block {
-  display: grid;
-  grid-template-columns: 53% 1fr;
-  padding: 0;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  margin: 135px auto 150px;
-  max-width: 1164px;
+.testimonials__wrapper {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  padding: 130px 0 147px 0;
+  gap: 68px;
+  justify-content: space-between;
+  align-items: stretch;
   width: 100%;
 }
 
-.testimonials-image-wrapper {
+.testimonials__heading {
   writing-mode: sideways-lr;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 20px;
+  position: absolute;
+  left: calc(50% + 9px);
+  top: 130px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
 }
 
-.testimonials-link-list {
+.testimonials__links-list {
+  writing-mode: sideways-lr;
   margin: 0;
-  padding: 40px 0 35px;
+  padding: 35px 0;
   list-style-type: none;
+  position: absolute;
+  right: calc(50% + 480px);
+  bottom: 150px;
+  top: 130px;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
-.testimonials-link-title {
-  font-family: 'Roboto';
-  font-style: normal;
+@media (max-width: 1125px){
+  .testimonials__links-list {
+    left: 0;
+  }
+}
+
+.testimonials__links-item {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 170px;
+}
+
+.testimonials__link-name {
   font-size: 16px;
-  line-height: 16px;
+  line-height: 19px;
   font-weight: 700;
-  display: block;
-  color: #000000;
 }
 
-.testimonials-link-text {
-  font-family: 'Roboto';
-  font-style: normal;
+
+.testimonials__link-itself {
   font-size: 16px;
-  line-height: 16px;
+  line-height: 19px;
   font-weight: 400;
   text-decoration: none;
   color: #000000;
 }
 
-.testimonials-title-image {
-  overflow: hidden;
-  object-fit: cover;
-  height: auto;
-  max-width: 451px;
-}
-
-.testimonials-title {
-  text-align: right;
-  margin: 0;
-}
-
-.testimonials-quote-wrapper {
+.testimonials__image-wrapper {
+  box-sizing: border-box;
   display: flex;
-  padding: 0;
-  margin: auto 0;
-  align-items: center;
-  flex-direction: column;
-  gap: 42px;
+  justify-content: end;
+  box-sizing: border-box;
+  width: calc(50% - 13.5px);
+  padding: 0 0 0 57px;
+  overflow: hidden;
 }
 
-.testimonials-quote {
+.testimonials__image {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.testimonials__inner {
+  width: calc(50% - 56.5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 42px;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 40.5px;
+}
+
+.testimonials__quote {
   font-family: 'Bitter';
   font-weight: 400;
   font-size: 32px;
   line-height: 38px;
   text-align: center;
   max-width: 217px;
-  color: #000000;
-  margin: 0;
-  padding: 0;
 }
 
-.testimonials-quote-image {
+.testimonials__quote-image {
   max-width: 221px;
+  max-height: 50%;
   height: auto;
   object-fit: contain;
-  margin: 0;
-  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .testimonials__wrapper {
+    position: unset;
+    padding: 80px 2px 78px;
+    flex-direction: column;
+    gap: unset;
+    justify-content: start;
+    align-items: center;
+  }
+  .testimonials__heading {
+    writing-mode: unset;
+    position: unset;
+    transform: unset;
+    font-size: 18px;
+    line-height: 21px;
+    align-self: flex-end;
+    margin: 0 0 28px 0;
+  }
+  .testimonials__links-list {
+    flex-direction: row-reverse;
+    writing-mode: unset;
+    position: unset;
+    transform: unset;
+    padding: 0;
+    order: 1;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .testimonials__links-item {
+    box-sizing: border-box;
+    width: calc(33.33% - 13.33);
+    min-width: fit-content;
+    height: unset;
+    align-items: start;
+  }
+  .testimonials__image {
+    display: none;
+  }
+  .testimonials__inner {
+    flex-direction: row;
+    width: 100%;
+    padding: 0 0 28px 0;
+    align-items: start;
+    justify-content: space-between;
+    gap: 39.5px;
+  }
+  .testimonials__quote {
+    max-width: unset;
+    width: calc(50% - 12px);
+    max-height: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 29px 0;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.1px;
+  }
+  .testimonials__moby-string {
+    display: block;  
+  }
+  .testimonials__quote-image {
+    max-width: unset;
+    width: calc(50% - 32px);
+    height: 330px;
+    object-fit: cover;
+  }
 }

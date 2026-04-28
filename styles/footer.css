@@ -1,62 +1,96 @@
 .footer {
   background-color: #000;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.1875;
-  font-weight: 400;
-  color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 70px 0;
+}
+
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 20px;
-  min-height: 190px;
 }
 
-@supports (display: grid) {
+/* @supports (display: grid) {
   .footer {
     display: grid;
     grid-template-columns: 273px auto 273px;
     justify-content: space-between;
   }
-}
+} */
 
-.contacts-block {
-  text-transform: uppercase;
+.footer__links {
   width: 273px;
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
-.telephone-link {
-  display: block;
+.footer__telephone-link {
   color: #FFFFFF;
   text-decoration: none;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
 }
-.email-link {
+
+.footer__email-link {
   display: block;
   color: #FFFFFF;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.slogan-block {
+.footer__slogan {
+  color: #FFFFFF;
   font-size: 18px;
   line-height: 18px;
   font-weight: 500;
   letter-spacing: 0.2px;
 }
-.slogan-name {
+
+.footer__slogan-title {
+  color: #FFFFFF;
   font-weight: 900;
   font-size: 24px;
   text-transform: uppercase;
   margin-left: 3px;
 }
 
-.author-rights-block {
+.footer__copyright {
   line-height: 1;
   width: 273px;
   text-align: right;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 48px 0 44px;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+  .footer__links {
+    width: unset;
+  }
+  .footer__telephone-link,
+  .footer__email-link {
+    line-height: 22px;
+  }
+  .footer__slogan {
+    order: -1;
+    align-self: end;
+    width: fit-content;
+  }
+  .footer__copyright {
+    width: unset;
+  }
 }
